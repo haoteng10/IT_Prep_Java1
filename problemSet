@@ -1,0 +1,15 @@
+    within 1-10:
+        Write a function to check if number is within 1-10
+
+    print bigger number
+        Write a function that take 2 int and print the bigger number
+
+    find average
+        Write a number that take 2 int and print the average
+
+    find next 10th
+        Write a function that take 1 int and return the next number that is divisible by 10
+
+    within x-y
+        Write a function to check if number is within x-y
+
