@@ -1,0 +1,110 @@
+How to set up your JDK and Intellij?
+
+What is the basic structure of a command line program?
+
+The basic data type.
+    int     - integer (no decimal)
+    String  - Text
+    double  - number with decimal
+    boolean - true or false
+
+How to create a variable and set value?
+    (Data type) (Variable name) = (Value);
+    int number = 100;
+    String name = "Singwai";
+    double pi = 3.1415;
+    boolean isSmart = true;
+
+What is the default value if we don't set it?
+    int = 0
+    String = null
+    double = 0
+    boolean = false
+
+Example for creating a variable without setting a value.
+    int number;
+    String name;
+    double pi;
+    boolean isSmart;
+
+Example of some boolean expression and it's evaluation.
+There are infinite many of them here are just some examples.
+    Define:
+        ! means 'not'
+        && means 'and'
+        || means 'or'
+
+    true            = true
+    false           = false
+    0==0            = true
+    1==100          = false
+    true && true    = true
+    true && false   = false
+    true || false   = true
+    true || true    = false
+    !true           = false
+    !false          = true
+
+Example of If-else statement
+    if ({boolean expression}){
+        //do something
+    }
+
+    if ({boolean expression}){
+            //do something
+    } else {
+            //do other thing
+    }
+
+    if ({boolean expression}){
+            //do something
+    } else if ({boolean expression}){
+            //do other thing
+    }
+
+Example of function
+    Understand function signature
+
+    {Control Access} {static?} {return type} {function name} ({function arguments}){
+        //function definition;
+    }
+
+    public static void printNumber (int number){
+        System.out.println (number);
+    }
+
+    public static boolean isPassing (int grade){
+        return grade >=65;  //65 is the passing grade
+    }
+
+    public static int returnBigger (int number1, int number2){
+        if (number1 > number2){
+            return number1;
+        } else {
+            return number2;
+        }
+    }
+
+Example of for-loop
+
+    for ({init value}; {boolean expression} ; {value upgrade}){
+        //for definition
+    }
+
+    for (int i = 0 ; i < 10 ; i ++){
+        System.out.print (i + ",");
+    }
+    //Above output 0,1,2,3,4,5,6,7,8,9,
+
+    for (int i = 10 ; i < 10 ; i ++){
+            System.out.print (i + ",");
+    }
+    //Above output nothing because i start in 10 and the boolean express is false
+
+    for (int i =10 ; i > 0 ; i--){
+            System.out.print (i + ",");
+    }
+    //Above output 10,9,8,7,6,5,4,3,2,1,
+
+
+Proper Bracket!

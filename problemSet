@@ -13,3 +13,72 @@
     within x-y
         Write a function to check if number is within x-y
 
+
+
+    ///////////
+    Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
+
+    notString("candy") → "not candy"
+    notString("x") → "not x"
+    notString("not bad") → "not bad"
+    //////////
+
+    //////////
+
+    Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+
+    mixStart("mix snacks") → true
+    mixStart("pix snacks") → true
+    mixStart("piz snacks") → false
+    /////////
+
+    /////////
+    icyHot
+    Given two temperatures, return true if one is less than 0 and the other is greater than 100.
+
+    icyHot(120, -1) → true
+    icyHot(-1, 120) → true
+    icyHot(2, 120) → false
+    //////////
+
+    /////////
+    is palindrome
+    A palindrome is a word, number, sentence, or verse that reads the same backward or forward.
+    ////////
+
+    ////////
+    Make Palindrome
+    ////////
+
+    ////////
+    Get input from user
+        Get int
+        Get String
+        Get double
+        Get boolean
+    ////////
+
+    ////////
+    Create array of name and print them out one by one
+    ///////
+
+    ///////
+    Create array of score and find average
+    ///////
+
+    ///////
+    Create array of number find largest
+    ///////
+
+    ///////
+    Create array of number find most occurred
+    ///////
+
+    ///////
+    Bonus:  Print all prime number
+            Find x print number
+            Find all factor of a number
+    //////
+
+
+

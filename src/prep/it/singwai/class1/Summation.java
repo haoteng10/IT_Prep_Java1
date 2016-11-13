@@ -1,4 +1,4 @@
-package prep.it.singwai;
+package prep.it.singwai.class1;
 
 
 public class Summation {

@@ -1,0 +1,30 @@
+
+
+
+Search image and download
+https://www.flickr.com/services/feeds/
+
+Search spotify
+https://developer.spotify.com/web-api/migration-guide/
+
+Google Location
+https://maps.googleapis.com/maps/api/geocode/json?address=Oxford%20University,%20uk&sensor=false
+
+Google book api
+https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699
+
+Google/Bing search API
+http://datamarket.azure.com/dataset/bing/search
+
+Google cloud vision annotation
+
+
+Weather report
+https://openweathermap.org/api
+
+Youtube
+https://developers.google.com/apis-explorer/#p/youtube/v3/
+
+Wikipedia
+https://www.mediawiki.org/wiki/API:Main_page
+
