@@ -64,14 +64,18 @@
 
     ///////
     Create array of score and find average
+    input = 1,2,3,4,5
+    input = -9,9,-9,9,-9
     ///////
 
     ///////
     Create array of number find largest
+    input = {-10,100,12312,-12341,-999}
     ///////
 
     ///////
     Create array of number find most occurred
+    Input = {1,2,3,4,5,1,2,3,5,1,6,6,7,8,3,4,1,4,5,6,6,7,8,9,5,4,3,2,4,5,6,7,8,9}
     ///////
 
     ///////
@@ -79,6 +83,7 @@
             Find x print number
             Find all factor of a number
     //////
+
 
 
 
