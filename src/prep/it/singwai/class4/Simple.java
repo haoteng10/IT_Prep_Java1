@@ -7,6 +7,7 @@ public class Simple {
     //Vending machin
     //Rot-13
     //https://en.wikipedia.org/wiki/ROT13
+    //Ascci
 
     public static void printStringAsCharArray(String in) {
         char[] chars = in.toCharArray();
@@ -18,7 +19,7 @@ public class Simple {
     }
 
     public static void printAsciiInputFromNumber(int in) {
-        //Checking to see if the input is a valid input.
+        //Check to see if the input is a valid input.
         if (in > 126 || in < 32) {
             System.out.println("Bad input");
         }
@@ -28,15 +29,15 @@ public class Simple {
     }
 
     public static void main(String[] args) {
-//        String s1 = "Happy Halloween!";
-//        String s2 = "Happy Thanksgiving!";
-//        printStringAsCharArray(s1);
-//        System.out.println(s1);
-//
-//        printStringAsCharArray(s2);
-//        System.out.println(s2);
-//
-//
+        String s1 = "Happy Halloween!";
+        String s2 = "Happy Thanksgiving!";
+        printStringAsCharArray(s1);
+        System.out.println(s1);
+
+        printStringAsCharArray(s2);
+        System.out.println(s2);
+
+
 //        String sub1 = s1.substring(0, 5);
 //        System.out.println(sub1);
         for (int i = 0; i < 26; i++) {

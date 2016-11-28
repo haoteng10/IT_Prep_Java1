@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
     /*
+     * Syntax overview
+     *
      * Learn about data type: int, double, boolean, String
 	 * Learn about if statment
 	 * Learn about for loop
@@ -28,7 +30,6 @@ public class Main {
 
         System.out.println(name1);
         System.out.println(age1);
-
 
         String name1Copy = name1;
         int age1Copy = age1;

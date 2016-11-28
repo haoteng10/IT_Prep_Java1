@@ -90,7 +90,6 @@ public class ArrayScore {
             }
         }
         if (!(finalOccurrence > curOccurrence)) {
-            finalOccurrence = curOccurrence;
             finalResult = curResult;
         }
         return finalResult;

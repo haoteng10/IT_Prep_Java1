@@ -25,9 +25,6 @@ public class ArrayExample {
 
 
 
-
-
-
         String[] name = new String[8];
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < name.length; i++) {
