@@ -1,5 +1,5 @@
 
-package prep.it.singwai.library.model.SingleWeather;
+package prep.it.singwai.weatherProject.model.SingleWeather;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;

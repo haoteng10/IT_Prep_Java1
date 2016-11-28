@@ -1,7 +1,7 @@
-package prep.it.singwai.library;
+package prep.it.singwai.weatherProject;
 
 import com.google.gson.JsonObject;
-import prep.it.singwai.library.model.SingleWeather.WeatherModel;
+import prep.it.singwai.weatherProject.model.SingleWeather.WeatherModel;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

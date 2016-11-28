@@ -1,5 +1,5 @@
 
-package prep.it.singwai.library.model.ForecastWeatherModel;
+package prep.it.singwai.weatherProject.model.ForecastWeatherModel;
 
 import javax.annotation.Generated;
 

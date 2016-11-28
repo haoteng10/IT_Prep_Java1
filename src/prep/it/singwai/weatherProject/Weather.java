@@ -1,7 +1,7 @@
-package prep.it.singwai.library;
+package prep.it.singwai.weatherProject;
 
 import com.google.gson.JsonObject;
-import prep.it.singwai.library.model.SingleWeather.WeatherModel;
+import prep.it.singwai.weatherProject.model.SingleWeather.WeatherModel;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import rx.Observable;
@@ -10,9 +10,6 @@ import rx.functions.Action1;
 import java.io.IOException;
 
 
-/**
- * Created by Personal on 11/27/16.
- */
 public class Weather {
 
     private static final String API_KEY = "873959a6eec8dfc4bcdfe17deddd254c";
@@ -41,12 +38,7 @@ public class Weather {
         WeatherService weatherService = retrofit.create(WeatherService.class);
         Observable<JsonObject> observable = weatherService.getForecaseWeatherByCityIdService(id, API_KEY, TYPE_JSON);
 
-        observable.subscribe(new Action1<JsonObject>() {
-            @Override
-            public void call(JsonObject jsonObject) {
-                System.out.println(jsonObject.toString());
-            }
-        });
+        observable.subscribe(jsonObject -> System.out.println(jsonObject.toString()));
     }
 
     public WeatherModel getCurrentWeatherByCityName(String name) {

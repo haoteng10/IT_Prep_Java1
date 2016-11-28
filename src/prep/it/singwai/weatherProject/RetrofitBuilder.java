@@ -1,8 +1,5 @@
-package prep.it.singwai.library;
+package prep.it.singwai.weatherProject;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import prep.it.singwai.library.model.SingleWeather.WeatherModel;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;

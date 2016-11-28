@@ -1,5 +1,5 @@
 
-package prep.it.singwai.library.model.SingleWeather;
+package prep.it.singwai.weatherProject.model.SingleWeather;
 
 import java.util.ArrayList;
 import java.util.List;
