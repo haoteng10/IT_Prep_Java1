@@ -1,88 +1,71 @@
-    within 1-10:
-        Write a function to check if number is within 1-10
-
-    print bigger number
-        Write a function that take 2 int and print the bigger number
-
-    find average
-        Write a number that take 2 int and print the average
-
-    find next 10th
-        Write a function that take 1 int and return the next number that is divisible by 10
-
-    within x-y
-        Write a function to check if number is within x-y
+Within 1-10:
+Write a function to check if number is within 1-10
 
 
+Print bigger number
+Write a function that take 2 int and print the bigger number
 
-    ///////////
-    Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
 
-    notString("candy") → "not candy"
-    notString("x") → "not x"
-    notString("not bad") → "not bad"
-    //////////
+Find average
+Write a number that take 2 int and print the average
 
-    //////////
 
-    Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+Find next 10th
+Write a function that take 1 int and return the next number that is divisible by 10
 
-    mixStart("mix snacks") → true
-    mixStart("pix snacks") → true
-    mixStart("piz snacks") → false
-    /////////
 
-    /////////
-    icyHot
-    Given two temperatures, return true if one is less than 0 and the other is greater than 100.
+Within x-y
+Write a function to check if number is within x-y
 
-    icyHot(120, -1) → true
-    icyHot(-1, 120) → true
-    icyHot(2, 120) → false
-    //////////
 
-    /////////
-    is palindrome
-    A palindrome is a word, number, sentence, or verse that reads the same backward or forward.
-    ////////
+Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
+notString("candy") → "not candy"
+notString("x") → "not x"
+notString("not bad") → "not bad"
 
-    ////////
-    Make Palindrome
-    ////////
 
-    ////////
-    Get input from user
-        Get int
-        Get String
-        Get double
-        Get boolean
-    ////////
+Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+mixStart("mix snacks") → true
+mixStart("pix snacks") → true
+mixStart("piz snacks") → false
 
-    ////////
-    Create array of name and print them out one by one
-    ///////
 
-    ///////
-    Create array of score and find average
-    input = 1,2,3,4,5
-    input = -9,9,-9,9,-9
-    ///////
+icyHot
+Given two temperatures, return true if one is less than 0 and the other is greater than 100.
+icyHot(120, -1) → true
+icyHot(-1, 120) → true
+icyHot(2, 120) → false
 
-    ///////
-    Create array of number find largest
-    input = {-10,100,12312,-12341,-999}
-    ///////
 
-    ///////
-    Create array of number find most occurred
-    Input = {1,2,3,4,5,1,2,3,5,1,6,6,7,8,3,4,1,4,5,6,6,7,8,9,5,4,3,2,4,5,6,7,8,9}
-    ///////
+is palindrome
+A palindrome is a word, number, sentence, or verse that reads the same backward or forward.
 
-    ///////
-    Bonus:  Print all prime number
-            Find x print number
-            Find all factor of a number
-    //////
+Make Palindrome
+Given word, make it to the shortest Palindrome
+
+Scanner
+Get input from user
+Get int
+Get String
+Get double
+Get boolean
+
+
+Create array of name and print them out one by one
+
+Create array of score and find average
+input = 1,2,3,4,5
+input = -9,9,-9,9,-9
+
+Create array of number find largest
+input = {-10,100,12312,-12341,-999}
+
+Create array of number find most occurred
+Input = {1,2,3,4,5,1,2,3,5,1,6,6,7,8,3,4,1,4,5,6,6,7,8,9,5,4,3,2,4,5,6,7,8,9}
+
+Bonus:  Print all prime number
+Find x print number
+Find all factor of a number
 
 
 
