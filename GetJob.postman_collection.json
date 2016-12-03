@@ -1,0 +1,824 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GetJob",
+		"_postman_id": "5bba5fe8-d40b-f43e-646b-f95eaeb2741d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "APPLY_JOB",
+			"description": "",
+			"item": [
+				{
+					"name": "APPLY_JOB",
+					"request": {
+						"url": "{{DOMAIN}}/api/follow/follow",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "FOLLOW_ITEM",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_ID",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Undo_apply",
+					"request": {
+						"url": "{{DOMAIN}}/api/follow/follow",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "UNFOLLOW_ITEM",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_ID",
+									"value": "2",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Unapply yourself from a specfic job.\n"
+					},
+					"response": []
+				},
+				{
+					"name": "GET_APPLY_STATUS",
+					"request": {
+						"url": "{{DOMAIN}}/api/follow/follow",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_ITEM_FOLLOW_STATUS",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_ID",
+									"value": "7",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "See if current user's apply status to a job id."
+					},
+					"response": []
+				},
+				{
+					"name": "GET_ALL_APPLY_BY_USER",
+					"request": {
+						"url": "{{DOMAIN}}/api/follow/follow",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_FOLLOW",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "OFFSET",
+									"value": "0",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "LIMIT",
+									"value": "20",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "See all job applied by this user"
+					},
+					"response": []
+				},
+				{
+					"name": "GET_ALL_APPLY_BY_JOB",
+					"request": {
+						"url": "{{DOMAIN}}/api/follow/follow",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_APPLICANT_BY_JOB_ID",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_ID",
+									"value": "13",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "See all user applied by this job"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Category",
+					"request": {
+						"url": "{{DOMAIN}}/api/category/categories",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_ALL_CATEGORIES",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "CATEGORY_VERSION",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Get all category"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Job",
+			"description": "",
+			"item": [
+				{
+					"name": "Add Job",
+					"request": {
+						"url": "{{DOMAIN}}/api/item/item",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "ADD_ITEM",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "NAME",
+									"value": "sb",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "DESCRIPTION",
+									"value": "aaa",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "PRICE",
+									"value": "0",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "CATEGORY_ID",
+									"value": "2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_ZIP_CODE",
+									"value": "11355",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "PICTURE4",
+									"value": "",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "PICTURE5",
+									"value": "",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "DOW",
+									"value": "",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all item",
+					"request": {
+						"url": "{{DOMAIN}}/api/item/item",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_ALL_ITEM",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "CATEGORY_ID",
+									"value": "2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "LIMIT",
+									"value": "10",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "OFFSET",
+									"value": "0",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get List of job by Category",
+					"request": {
+						"url": "{{DOMAIN}}/api/item/item",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_ITEM_BY_CATEGORY_ID",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "CATEGORY_ID",
+									"value": "14",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "LIMIT",
+									"value": "10",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "OFFSET",
+									"value": "0",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single job By ID",
+					"request": {
+						"url": "{{DOMAIN}}/api/item/item",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ITEM_ID",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ACTION",
+									"value": "GET_ITEM_BY_ITEM_ID",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Get single item by item ID "
+					},
+					"response": []
+				},
+				{
+					"name": "GET ITEMS BY ACCOUNT_ID AND STATUS",
+					"request": {
+						"url": "{{DOMAIN}}/api/item/item",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_ITEM_BY_ACCOUNT_ID_AND_STATUS",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ACCOUNT_ID",
+									"value": "1",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "ITEM_STATUS",
+									"value": "ACTIVE,INACTIVE",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE ITEM STATUS",
+					"request": {
+						"url": "{{DOMAIN}}/api/item/item",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "UPDATE_ITEM_STATUS",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_ID",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_STATUS",
+									"value": "INACTIVE",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mark abuse",
+			"description": "Create a tuple to mark abusive user and item. It will not remove user and item.\nThe api is for user facing.",
+			"item": [
+				{
+					"name": "Add mark abuse post",
+					"request": {
+						"url": "{{DOMAIN}}/api/abuse/item",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ABUSE_DESCRIPTION",
+									"value": "This is abusive",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ITEM_ID",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Mark this job as abusive.\n\nAnything that violate the user agreement is consider abusive. "
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rating",
+			"description": "",
+			"item": [
+				{
+					"name": "Rate a user",
+					"request": {
+						"url": "{{DOMAIN}}/api/user_rating/rate",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "RECIPIENT_ACCOUNT_ID",
+									"value": "2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "SCORE",
+									"value": "5",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Rate a user.\nIf user already rated before, update the score."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Skill",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Skill",
+					"request": {
+						"url": "{{DOMAIN}}/api/skill/skill",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": "Get all skill"
+					},
+					"response": []
+				},
+				{
+					"name": "Set User Skill",
+					"request": {
+						"url": "{{DOMAIN}}/api/userskill",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "SKILL_ID",
+									"value": "2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "SKILL_VALUE",
+									"value": "1100",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Update a skill value from a user when you sign in.\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User SKill",
+					"request": {
+						"url": "{{DOMAIN}}/api/getuserskill",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ACCOUNT_ID",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Get User's skill from any user via user id."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"url": "{{DOMAIN}}/api/account",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "CREATE_USER",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "EMAIL_ADDRESS",
+									"value": "hello@softape.io",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "PASSWORD",
+									"value": "111111",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Login via Password",
+					"request": {
+						"url": "{{DOMAIN}}/api/account/account",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "EMAIL_ADDRESS",
+									"value": "hello@softape.io",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "PASSWORD",
+									"value": "111111",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ACTION",
+									"value": "LOGIN_BY_EMAIL_PASSWORD",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Log out user",
+					"request": {
+						"url": "{{DOMAIN}}/api/account/account",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "LOGOUT_USER",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "LOG_USER to kill session on server side."
+					},
+					"response": []
+				},
+				{
+					"name": "Update user information",
+					"request": {
+						"url": "{{DOMAIN}}/api/account/account",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "UPDATE_USER",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "PHONE_NUMBER",
+									"value": "OPTIONAwefL",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "AVATAR_64_STRING",
+									"value": "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",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Email will be replace by session."
+					},
+					"response": []
+				},
+				{
+					"name": "Is login",
+					"request": {
+						"url": "{{DOMAIN}}/api/account",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "IS_LOGIN",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Check to see if this device has a active session associate with a user."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Userinfo via user id",
+					"request": {
+						"url": "{{DOMAIN}}/api/account/account",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "GET_USERINFO",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "ACCOUNT_ID",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Check to see if this device has a active session associate with a user."
+					},
+					"response": []
+				},
+				{
+					"name": "Upload/Update user resume.",
+					"request": {
+						"url": "{{DOMAIN}}/api/account/account",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ACTION",
+									"value": "RESUME_UPLOAD",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "RESUME_IMG",
+									"value": "iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAKRGlDQ1BJQ0MgUHJvZmlsZQAASA2dlndUFNcXx9/MbC+0XZYiZem9twWkLr1IlSYKy+4CS1nWZRewN0QFIoqICFYkKGLAaCgSK6JYCAgW7AEJIkoMRhEVlczGHPX3Oyf5/U7eH3c+8333nnfn3vvOGQAoASECYQ6sAEC2UCKO9PdmxsUnMPG9AAZEgAM2AHC4uaLQKL9ogK5AXzYzF3WS8V8LAuD1LYBaAK5bBIQzmX/p/+9DkSsSSwCAwtEAOx4/l4tyIcpZ+RKRTJ9EmZ6SKWMYI2MxmiDKqjJO+8Tmf/p8Yk8Z87KFPNRHlrOIl82TcRfKG/OkfJSREJSL8gT8fJRvoKyfJc0WoPwGZXo2n5MLAIYi0yV8bjrK1ihTxNGRbJTnAkCgpH3FKV+xhF+A5gkAO0e0RCxIS5cwjbkmTBtnZxYzgJ+fxZdILMI53EyOmMdk52SLOMIlAHz6ZlkUUJLVlokW2dHG2dHRwtYSLf/n9Y+bn73+GWS9/eTxMuLPnkGMni/al9gvWk4tAKwptDZbvmgpOwFoWw+A6t0vmv4+AOQLAWjt++p7GLJ5SZdIRC5WVvn5+ZYCPtdSVtDP6386fPb8e/jqPEvZeZ9rx/Thp3KkWRKmrKjcnKwcqZiZK+Jw+UyL/x7ifx34VVpf5WEeyU/li/lC9KgYdMoEwjS03UKeQCLIETIFwr/r8L8M+yoHGX6aaxRodR8BPckSKPTRAfJrD8DQyABJ3IPuQJ/7FkKMAbKbF6s99mnuUUb3/7T/YeAy9BXOFaQxZTI7MprJlYrzZIzeCZnBAhKQB3SgBrSAHjAGFsAWOAFX4Al8QRAIA9EgHiwCXJAOsoEY5IPlYA0oAiVgC9gOqsFeUAcaQBM4BtrASXAOXARXwTVwE9wDQ2AUPAOT4DWYgSAID1EhGqQGaUMGkBlkC7Egd8gXCoEioXgoGUqDhJAUWg6tg0qgcqga2g81QN9DJ6Bz0GWoH7oDDUPj0O/QOxiBKTAd1oQNYSuYBXvBwXA0vBBOgxfDS+FCeDNcBdfCR+BW+Bx8Fb4JD8HP4CkEIGSEgeggFggLYSNhSAKSioiRlUgxUonUIk1IB9KNXEeGkAnkLQaHoWGYGAuMKyYAMx/DxSzGrMSUYqoxhzCtmC7MdcwwZhLzEUvFamDNsC7YQGwcNg2bjy3CVmLrsS3YC9ib2FHsaxwOx8AZ4ZxwAbh4XAZuGa4UtxvXjDuL68eN4KbweLwa3gzvhg/Dc/ASfBF+J/4I/gx+AD+Kf0MgE7QJtgQ/QgJBSFhLqCQcJpwmDBDGCDNEBaIB0YUYRuQRlxDLiHXEDmIfcZQ4Q1IkGZHcSNGkDNIaUhWpiXSBdJ/0kkwm65KdyRFkAXk1uYp8lHyJPEx+S1GimFLYlESKlLKZcpBylnKH8pJKpRpSPakJVAl1M7WBep76kPpGjiZnKRcox5NbJVcj1yo3IPdcnihvIO8lv0h+qXyl/HH5PvkJBaKCoQJbgaOwUqFG4YTCoMKUIk3RRjFMMVuxVPGw4mXFJ0p4JUMlXyWeUqHSAaXzSiM0hKZHY9O4tHW0OtoF2igdRzeiB9Iz6CX07+i99EllJWV75RjlAuUa5VPKQwyEYcgIZGQxyhjHGLcY71Q0VbxU+CqbVJpUBlSmVeeoeqryVYtVm1Vvqr5TY6r5qmWqbVVrU3ugjlE3VY9Qz1ffo35BfWIOfY7rHO6c4jnH5tzVgDVMNSI1lmkc0OjRmNLU0vTXFGnu1DyvOaHF0PLUytCq0DqtNa5N03bXFmhXaJ/RfspUZnoxs5hVzC7mpI6GToCOVGe/Tq/OjK6R7nzdtbrNug/0SHosvVS9Cr1OvUl9bf1Q/eX6jfp3DYgGLIN0gx0G3QbThkaGsYYbDNsMnxipGgUaLTVqNLpvTDX2MF5sXGt8wwRnwjLJNNltcs0UNnUwTTetMe0zg80czQRmu836zbHmzuZC81rzQQuKhZdFnkWjxbAlwzLEcq1lm+VzK32rBKutVt1WH60drLOs66zv2SjZBNmstemw+d3W1JZrW2N7w45q52e3yq7d7oW9mT3ffo/9bQeaQ6jDBodOhw+OTo5ixybHcSd9p2SnXU6DLDornFXKuuSMdfZ2XuV80vmti6OLxOWYy2+uFq6Zroddn8w1msufWzd3xE3XjeO2323Ineme7L7PfchDx4PjUevxyFPPk+dZ7znmZeKV4XXE67m3tbfYu8V7mu3CXsE+64P4+PsU+/T6KvnO9632fein65fm1+g36e/gv8z/bAA2IDhga8BgoGYgN7AhcDLIKWhFUFcwJTgquDr4UYhpiDikIxQODQrdFnp/nsE84by2MBAWGLYt7EG4Ufji8B8jcBHhETURjyNtIpdHdkfRopKiDke9jvaOLou+N994vnR+Z4x8TGJMQ8x0rE9seexQnFXcirir8erxgvj2BHxCTEJ9wtQC3wXbF4wmOiQWJd5aaLSwYOHlReqLshadSpJP4iQdT8YmxyYfTn7PCePUcqZSAlN2pUxy2dwd3Gc8T14Fb5zvxi/nj6W6pZanPklzS9uWNp7ukV6ZPiFgC6oFLzICMvZmTGeGZR7MnM2KzWrOJmQnZ58QKgkzhV05WjkFOf0iM1GRaGixy+LtiyfFweL6XCh3YW67hI7+TPVIjaXrpcN57nk1eW/yY/KPFygWCAt6lpgu2bRkbKnf0m+XYZZxl3Uu11m+ZvnwCq8V+1dCK1NWdq7SW1W4anS1/+pDa0hrMtf8tNZ6bfnaV+ti13UUahauLhxZ77++sUiuSFw0uMF1w96NmI2Cjb2b7Dbt3PSxmFd8pcS6pLLkfSm39Mo3Nt9UfTO7OXVzb5lj2Z4tuC3CLbe2emw9VK5YvrR8ZFvottYKZkVxxavtSdsvV9pX7t1B2iHdMVQVUtW+U3/nlp3vq9Orb9Z41zTv0ti1adf0bt7ugT2ee5r2au4t2ftun2Df7f3++1trDWsrD+AO5B14XBdT1/0t69uGevX6kvoPB4UHhw5FHupqcGpoOKxxuKwRbpQ2jh9JPHLtO5/v2pssmvY3M5pLjoKj0qNPv0/+/tax4GOdx1nHm34w+GFXC62luBVqXdI62ZbeNtQe395/IuhEZ4drR8uPlj8ePKlzsuaU8qmy06TThadnzyw9M3VWdHbiXNq5kc6kznvn487f6Iro6r0QfOHSRb+L57u9us9ccrt08rLL5RNXWFfarjpebe1x6Gn5yeGnll7H3tY+p772a87XOvrn9p8e8Bg4d93n+sUbgTeu3px3s//W/Fu3BxMHh27zbj+5k3Xnxd28uzP3Vt/H3i9+oPCg8qHGw9qfTX5uHnIcOjXsM9zzKOrRvRHuyLNfcn95P1r4mPq4ckx7rOGJ7ZOT437j154ueDr6TPRsZqLoV8Vfdz03fv7Db56/9UzGTY6+EL+Y/b30pdrLg6/sX3VOhU89fJ39ema6+I3am0NvWW+738W+G5vJf49/X/XB5EPHx+CP92ezZ2f/AAOY8/wRDtFgAAAOeUlEQVRYCZVYWY8c53U9tXb1PtPdM9OzcThDSiZFEaYU2abkPTFgGbAN5Dl5yJMegsDwP0iAvAXILwiQBxsG8hAEMeDEUkxb3iSNRcmESJHSkCOOyNFwlp7et9q/nFvdPWyKFGAX0ayarur6zj333nPv/bQwDGP8iYfG55TG/5UafeR3/FM3TDkhCAIgDmFYKei6Lnf5qEIcR7ziE/IQf/rnHOaf/LC8nCuoOIZhGNAE6PgYdJo4vHsL/eMHBBPCmSkh5eSQn62iUF0lYBsqihK7/lyU2pMYpNVcX3vMVqVizTQt5Xse6vs7CF0XRzu3sbX5ayivi1whh0JljsDKmp3OKqVrKMwtY27jEjKlKo2LEg4nxgm7ci3n6WN6/Scy+Cg4TXhL/hkEd7CzhQ/eeBVhv4V6vYXrf7yG2A+wWJ7BDD+5YhGpXFHpY9a6tX243RZKG59HZe2c0qbATIBOg5Pr6fWfCHD80MgyEqliBd00Ud+9g/de/Qn2dvdQa/TQGbhQZgq2puOg0UJ69xDl+TnYlXmYuRl4/R4/XXQOH6D9YBder4GlZy5DT4IxAZKsMQ3002x+JkAxVH6YxBzBdRlf77/+U9z5cBv3HtTgBiETQYOjKzjZFObnZ+G5PtqtAfILjNMwhGnb0PhMFProNI7gbv4cpmlj6dwXEDMmuUCyxoTBCbhk3THTnwlQckB+oDEhAneA9678N67876vwI4UwimERWPIxdNimjnzGQT6fR+z5cMlcpNmM0QHcRg3K7zNJAnSOjvDxO79EcXED2WL5BOQE4PR5wupIC6bvjK+nrdm99TY+vPoGekMXhYwFsYqYkE3ZyPCikHWQSdvIzeSRKWbg1o8Zd034MDCk8jSO+HerCS0gk/sfY//DzSesOPpqAmzywBMZHFEsckLXNms4vnsTJplcXSiTNY2MBrAtnaAc6GQ5n0lhdnYGtpNClmddmYj8IWLGmk9zXJXCce0YKauPymwOjTvvIrj0DVipbMKiNtbMCagJOfL34wDHrmWAJJra2NtGJCBmisilLcRBhLRpIJ1Owcnnkhgq5GyUl5cp2Cm+kvcLRRoRJcJtGBpCCnirP8T9WhuDvovTtz6GWT6D57/zNyNMEm8SUzwm4CbnxwGOfsLFDPiDLo7v3UbghShVl5DSAwybLcpJEQ7ZShfJFuXEsgk4PwuTjATekMlhUmpy6NaOsLx2Cj5lqMVYjOjiXsZGs+/hf370b1hYP4/lc88jikLio/iP156Akz8fA6gpYU6cA/Tq+3hw+wYlJoP5lRU4jDPbysKie00CpN7BYFYybwgyxZCwYLCCxL4LO5OBRakZMmEW1tbRbdRp9D3YjSbW6GYzZWDrD79KAAo4UnfC4nQcPpIkSeyJJLOSCPr20X08uHcfzZpkYsg7lmblZuGwKuTm12BmS4iNNM1MIWBFH7RbIF1QhqMFlKFMaQ6haGgYYHZxGal8UStXqwhMCxoNO6R3arvbiVwJwAlzsr5cy+cRBicPaJqEPtCt19CpN+ExFTvzFQb+QCnSZahZ6iObA+qb16wzORwMhwNEgzYchChsXFAey6CeooibGhq1OmZyDprFsurXD3HmmWfQH3ro9rpwB33hIgEzYY5nWT45HgE4+VJqrsAIWXN7/T4GzNra7n30Wzkt6A/VoEg3k/vQsBGTtQEZihWTgs+V8hZ6zbpGtmgDY8vOwcnNIfJclEpFTQWemqFerp55Clq+zPL39Ii5cZIkXpzqBU4ATtCPWUwssMgMiYZH8e13O1S1UHUbbZhuihKTgUf3JdlHQ0Sss8xsnyAtY6h6LHEOZciLm9TOAmwK87C/owqFArudShJzIuzGQ7JOXDzN4CMxOPH7hMn83CKWluYJQmdohWTNRKVUQKlSoigzawOFznEHm1sH+MnvbmHz1j2YloNTl17C4tpZZJg4Dl/mHe8x623kywvMcAs2Xe8wwYJBB62jvZPkmKw7fT5hcPpLuZYgzM2fwplnL6DXu4arW3s4eusmXji7gld+8PcwMnl89IvX8Oa7W6hV1nCYTiPtR/ju51/C/PnnoMUe/OYhGrdvYvf+DlTgIl+pJIYKaxbrdBh66POZ4twqRTuV1P1P4zDHPp+il1IbKc3QImVRMhbOPovg2hY27x+zKchrb20fqFdyJVTPXaDU5DF36QsIGV86F1w++xQycwsU80CLXU2lixXMnfkcmsc1BCyT+dKcli0WlUGhN/mBIshhm01GjwCF69ERxzGLC4s9jxMGJxksX0oMCIM6pSC/eBYvfP3rWFpZw/psRaUZV9lsHmAWzixUKeDL8HvNxE1GtsCI1VnqIhWzm/F7bVrrI8XFB23G7ql1ZTsZys6AbAUUeQv+sJu4WtEYOWTh6Rg8ASg3H2UzTlojxUwt5As4/eJlzLByiKjmcnkEonfsUDQyYTnUQp2VQGYTaa8ISot5XzKbou3Qfa5YLPMKo156y5jVQ0YBlhe4nTpQXRcIJ8eEMHNyIXfkemwBz6wmTA4J6JAlSjlZOKwOGvWP/XwirtEgQOQOCZItqFQDgom4YOz2qYldhL1OMovY2SwMf/RuRWDCXBRGMInZoGHD5gENGTAuaagI7EnRG7v4IajE7SdARWJMukTqSjTsc8E2y5oG26boHlOg2RiYdJ9GMVZ0qbxccaGIbgvZA/I2TDHKHiSuFqNjGhAySWSlmDJlMYxCrweXxtjl7MNE4Zri0RMGJ+w9ZJIvYNers5RZ6Sw7YlYDAtl6/3rSNduUnNMXL2Lj8ksEx4xtHNBbZJRsJwfLn0Fp0ehGcb2hBYnhMZmTtSxJEr5fQFDFOQ40oVhC+cU0gQ+TZPTWkZsnICMZFRn0DrO29uBjHNUi1Pb2kV1ZxYtfeZExuQSwM4m4uHQoQaeBmeoCFyATUl3k9/yE7GaGgwFyfLE4UDF+Td2R0slazjQgnf6gSdnhmMAgnfZokiST5JgGOWFUgtlmV6IY3AetOuY3ziLbCLD9L//BWscG4rnzCJgk9ds7uPj9F8EcGYGQMwd2nX/VGQ5HnSGqbOESN3O2ln5Jl3iThGLDqtjghvyYaSqExAbvCwY9oViskiz79JnfySDO7gQWy5UbuYl+/devfo0/zLCb/uHfofK1l7DGjvlb3/s25i88DZ+gQy4qsSqNrgT/O1evocFGVfpELsRFmVQEpzMWI99jGLEDDxgmjF3JjzGUxP1JqZuASxCOQcp34g75RcQqbBUq8LhwJxzimy9/FV/6pIPiP/wr0q/8Ewohh6Jz1VHMsrxJt6bx18ob4O3fvoWtnV0sVCtsZj2uTlZJc+j1E2A6e0g5pNJ47IZEBSYeTRhM7n7qP96gHYQm/mLQyj5LpGdg50vawcE+CusrcFcKuB+0Uf/OX8D/q+coHSYZSlPb+LFT2rB1jDevvI7fb76L08tVVMoltmR9SYGkzJE/skbJYW8oy8l1wKqS6Ot4fcHwiFDLF3LQgpG/R9fJ8BRz3ojTReWZDn75xia+9fKXsfi3L6Oyso40NVJncMeMIZ0sH+5sq9+8dgX39g9w4el1VEtFGsmXRaGyKNKsFezE+T7pLXU2ZUwiLZWG362z9PVkX4fryxjAzn3i3gmtAnDMYALS4JstspOi1MDMa2pmSR3c+T32PtnDFy9/JclWjTNJ7HrY37qJG3+8iqtvX9OYIOpLz1/EyvI8Y5JxnPSLA83QHQYh0fLtLMosAlQBJpPNeSak1vYPtqQ4aFa2KMo+YnAanFxPGEyu+TIZP1MUbCYK31kjaxt458M7mPn5z5CmzzrdQdIv3r33ET7aPUAmlVJ/efkS1jeW6XKLItxj6WbFkUadswyZTCoSkSdVShM3yxYd1/b6TXT3b6nC4nmqB1u6MWNyeuIhrjO5iEMpSbOH0xhjrrLQYub+5xvvIm48wPadHaytLMMhk04ug/PrpzC/tMgqwpIoQSdZSl3UA0qHzv0cny6mS6ULYuBRxGU+DiWtYIYMAd1mG/YJn8k8zuA0SqbHKA6o+jbbqRxHyUKhlHTT3U4bPjNQLy9jI1vEaiHLKbCOPHcZcvks3cYoYozZlBaJJd/tMCGoDGrAWQZgnUky3SYBooci6myzOOj36Go+a5XIZuPRJBGXyiFeln5MaBfNEhfbss2RyWmz5bIqlitotFocfFz4BLLORnTWoNtyaXxufQ3V5RUtlkAm09IMEAkTiLHmmxpjTgbEpKNJ0d2y92Pw3SJp0qJFmolB41ALhj2lEfSJiwXcw4TRuYNJrad/dJYQGeLlY6cclWPLtbp6KulisraGtbyJDIv9/mGDroqRp4tPndlg78C6zLlklKm0mCxxqFchLQpjIxHxpFUjOIvNx5A7Y9KOMYZGz3FilBr/WTIjSZbIgVKS7hoXziHHziXNmWLr9m384uY9PFXkjDLvIGUGKK5W0edGkU9WA4ptZe00etxZcDmW6tyzlt7PZ8aKuzN5xjLPMfVPJziDbjZIRkCjTHbZAVu4FJtil8pwAlDYm7iY7mEmsplMxIuqzz5vm9Xg+gdbeP3qe3j1/67guNXGa9SyH3P+/OYzp/HXz5/GxdU5OFqELJvVYjbDXa8NtDkZeu0mBuwPO9Q5KeoWkyfZy85wF4JxF3K/R5dGM5EfqgvbMJ+7Y9KhcwdA9gQeHgJSNsn3m2387uY27l6/jg+4YfnbGx/g6PAQAwa+U5iFQRYCjp4xXRFy9rVzBTynd/DCYgEXChae3VjE8lIVOjuXfqeD4/27UIMDkWiOoAvEaaK0JONCBykmkp2y0B949BpzmW1b2G+zXWOvOQ1Q3Crba//+5jX88+Y27t+4gfj2LQq0xTgRqeG+wTyHouwsdI4BDFIKNKsHLZUdrIAule8gO19cYJbzS9FrY4+dzAs5D//4RRpSKNOtnJMJyCGTraNDzMwWkWWCMUfYbDBWKdgRB6khdx7+HzjwcaQMAVtrAAAAAElFTkSuQmCC",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Upload resume via based 64 string."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WEB",
+			"description": "",
+			"item": [
+				{
+					"name": "User Agreement",
+					"request": {
+						"url": "{{DOMAIN}}/tos",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "privacy_policy",
+					"request": {
+						"url": "{{DOMAIN}}/pp",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

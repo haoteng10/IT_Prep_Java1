@@ -108,3 +108,18 @@ Example of for-loop
 
 
 Proper Bracket!
+
+
+Java syntax guideline:
+Class name MUST match file name in Java
+Package name MUST match your file path
+Resource such as Scanner, JSONObject, Math, Map, List MUST imported to your Java file
+
+Everything in Java should be CamaelCase. (With some exception such as final value, but we don't care for now.)
+Funcation Name, Variable Name, Class Name.
+https://en.wikipedia.org/wiki/Camel_case
+ThisIsAnExampleOfCamaelCase
+
+Only class name should start with upper case, so we can tell the different between Class and Object in code.
+
+DO NOT user == to compare string, user equal() or equalIgnoreCase()
