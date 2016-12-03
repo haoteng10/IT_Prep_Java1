@@ -32,4 +32,6 @@ public class Simple {
 
         System.out.println("The current time is " + date.toString());
     }
+
+
 }
