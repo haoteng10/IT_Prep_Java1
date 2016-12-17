@@ -1,0 +1,54 @@
+{
+  "coord": {
+    "lon": -74.01,
+    "lat": 40.71
+  },
+  "weather": [
+    {
+      "id": 511,
+      "main": "Rain",
+      "description": "freezing rain",
+      "icon": "13d"
+    },
+    {
+      "id": 701,
+      "main": "Mist",
+      "description": "mist",
+      "icon": "50d"
+    },
+    {
+      "id": 600,
+      "main": "Snow",
+      "description": "light snow",
+      "icon": "13d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 271.99,
+    "pressure": 1017,
+    "humidity": 100,
+    "temp_min": 268.15,
+    "temp_max": 274.15
+  },
+  "visibility": 3219,
+  "wind": {
+    "speed": 2.1,
+    "deg": 350
+  },
+  "clouds": {
+    "all": 90
+  },
+  "dt": 1481987820,
+  "sys": {
+    "type": 1,
+    "id": 1969,
+    "message": 0.2011,
+    "country": "US",
+    "sunrise": 1481976898,
+    "sunset": 1482010234
+  },
+  "id": 5128581,
+  "name": "New York",
+  "cod": 200
+}

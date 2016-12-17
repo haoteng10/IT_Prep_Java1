@@ -1,0 +1,34 @@
+[
+  {
+    "screenSize": 4.7,
+    "price": 649.99,
+    "name": "iPhone 7",
+    "yr": 2016,
+    "storage": 32,
+    "category": "Phone"
+  },
+  {
+    "screenSize": 5.5,
+    "price": 769.99,
+    "name": "iPhone 7 Plus",
+    "yr": 2016,
+    "storage": 32,
+    "category": "Phone"
+  },
+  {
+    "screenSize": 27,
+    "price": 1099.99,
+    "name": "iMac",
+    "yr": 2015,
+    "storage": 128,
+    "category": "Desktop"
+  },
+  {
+    "screenSize": 13,
+    "price": 1899.99,
+    "name": "MacBook Pro",
+    "yr": 2014,
+    "storage": 128,
+    "category": "Desktop"
+  }
+]
