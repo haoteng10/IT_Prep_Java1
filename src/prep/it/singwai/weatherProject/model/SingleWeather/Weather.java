@@ -11,7 +11,7 @@ public class Weather {
     @SerializedName("id")
     @Expose
     private Integer id;
-    @SerializedName("main")
+    @SerializedName("Main")
     @Expose
     private String main;
     @SerializedName("description")
@@ -42,7 +42,7 @@ public class Weather {
     /**
      * 
      * @return
-     *     The main
+     *     The Main
      */
     public String getMain() {
         return main;
@@ -51,7 +51,7 @@ public class Weather {
     /**
      * 
      * @param main
-     *     The main
+     *     The Main
      */
     public void setMain(String main) {
         this.main = main;

@@ -12,7 +12,7 @@ public class SingleWeatherNode {
     @SerializedName("dt")
     @Expose
     public Integer dt;
-    @SerializedName("main")
+    @SerializedName("Main")
     @Expose
     public Main main;
     @SerializedName("weather")

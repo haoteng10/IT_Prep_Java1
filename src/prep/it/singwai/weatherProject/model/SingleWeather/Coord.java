@@ -42,6 +42,7 @@ public class Coord {
         return lat;
     }
 
+
     /**
      * 
      * @param lat
@@ -51,5 +52,11 @@ public class Coord {
         this.lat = lat;
     }
 
-
+    @Override
+    public String toString() {
+        return "Coord{" +
+                "lon=" + lon +
+                ", lat=" + lat +
+                '}';
+    }
 }

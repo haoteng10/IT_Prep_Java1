@@ -11,7 +11,7 @@ public class Weather {
     @SerializedName("id")
     @Expose
     public Integer id;
-    @SerializedName("main")
+    @SerializedName("Main")
     @Expose
     public String main;
     @SerializedName("description")

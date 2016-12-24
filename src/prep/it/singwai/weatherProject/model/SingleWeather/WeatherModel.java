@@ -104,7 +104,7 @@ public class WeatherModel {
     /**
      * 
      * @return
-     *     The main
+     *     The Main
      */
     public Main getMain() {
         return main;
@@ -113,7 +113,7 @@ public class WeatherModel {
     /**
      * 
      * @param main
-     *     The main
+     *     The Main
      */
     public void setMain(Main main) {
         this.main = main;
@@ -263,5 +263,21 @@ public class WeatherModel {
         this.cod = cod;
     }
 
-
+    @Override
+    public String toString() {
+        return "WeatherModel{" +
+                "coord=" + coord +
+                ", weather=" + weather +
+                ", base='" + base + '\'' +
+                ", main=" + main +
+                ", visibility=" + visibility +
+                ", wind=" + wind +
+                ", clouds=" + clouds +
+                ", dt=" + dt +
+                ", sys=" + sys +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", cod=" + cod +
+                '}';
+    }
 }

@@ -6,10 +6,10 @@ public class WeatherDriver {
 
     public static void main(String[] args) {
 
-        Weather weather = new Weather();
-        weather.init();
+        WeatherService weatherService = new WeatherService();
+        weatherService.init();
         long start = System.nanoTime();
-        WeatherModel weatherModel = weather.getCurrentWeatherByCityName("Hong%20Kong");
+        WeatherModel weatherModel = weatherService.getCurrentWeatherByCityName("Hong%20Kong");
         long end = System.nanoTime();
 
         System.out.println("Total time is " + (end - start));
